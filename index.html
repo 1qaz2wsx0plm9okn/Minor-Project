@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+    <nav>
+		<a href="{{ url_for('welcome') }}">Home</a>
+		<a href="{{ url_for('about') }}">About</a>
+		<a href="{{ url_for('contact') }}">Contact</a>
+		<a href="{{ url_for('login') }}">Register</a>
+	</nav>
+    
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <div id="username"><p id="user1">Username</p>
+        <input type="text" id="username" name="username" placeholder="type your name" >
+    </div>
+    
+<div id="password"><p id="password">Password</p>
+    <input type="password" id="password" name="password" placeholder="enter password" >
+</div>
+<div id="email"><p id="email">Username</p>
+    <input type="email" id="email" name="email" placeholder="email address" >
+</div>
+
+</form>
+</body>
+</html>
